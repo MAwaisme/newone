@@ -31,8 +31,6 @@ export default function App() {
 
   return (
     <div className="Staking__Pool__wrapper">
-      <h1 >Staking Pools</h1>
-      <br />
       <Tabs selectedTab={selectedTab} onClick={setSelectedTab} tabs={tabs} />
     </div>
   );

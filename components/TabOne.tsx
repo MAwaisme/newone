@@ -11,8 +11,11 @@ import {
     ModalCloseButton,
     useDisclosure,
     Button,
-    Text
+    Text,
+    Image
 } from '@chakra-ui/react'
+// import imgUrl from 'public/bg/loader.png'
+
 
 const TabOne: FC<{}> = () => {
     // const { isOpen, toggle } = useModal();
@@ -43,16 +46,17 @@ const TabOne: FC<{}> = () => {
                                     <button onClick={toggle}>x</button>
                                 </div>
                             </Modal> */}
-                            <Button onClick={onOpen}>Open Modal</Button>
+                            <Button onClick={onOpen}>Collect</Button>
 
                             <Modal isOpen={isOpen} onClose={onClose} isCentered>
                                 <ModalOverlay />
                                 <ModalContent>
                                     {/* <ModalHeader>Modal Title</ModalHeader> */}
                                     {/* <ModalCloseButton /> */}
-                                    <ModalBody>
+                                    <ModalBody className="modal___________content">
                                         {/* <Lorem count={2} /> */}
-                                        <Text>Lorem</Text>
+                                        {/* <Text>Lorem</Text> */}
+                                        <Image src={'https://dulcet-malabi-b51c3d.netlify.app/loader.PNG'} />
                                         <Button colorScheme='gray' color={'lightgray'}>Loading...</Button>
                                     </ModalBody>
 
