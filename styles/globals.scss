@@ -1,13 +1,21 @@
-.pink_________btn{
+.pink_________btn {
   background-color: #FF7495 !important;
 }
-.px________pading{
+
+.px________pading {
   padding: 40px 15px !important;
 }
 
 body {
   position: relative;
-  font-family: system-ui;
+  // font-family: Poppins;
+  // height: 100vh;
+  font-family: 'Poppins';
+  // font-size: 22px;
+  background-image: url('./bg.png') !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  width: 100% !important;
 
   h1,
   h2,
@@ -15,14 +23,41 @@ body {
   h4,
   h5,
   h6 {
-    font-family: system-ui !important;
+    font-family: Poppins !important;
   }
 
   b {
-    font-family: system-ui !important;
+    font-family: Poppins !important;
   }
 }
 
+.Fist__back__img {
+  top: 75px;
+  left: 100px;
+  width: 280px;
+  height: 250px;
+  position: fixed;
+}
+
+.scond__back__img {
+  opacity: 1;
+  top: 75px;
+  right: 0px;
+  width: 185px;
+  height: 200px;
+  position: fixed;
+  z-index: -0;
+}
+
+.wrapper___code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar {
+  width: 10%;
+}
 
 .tabs___inner {
   width: 100%;
@@ -40,11 +75,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .Staking__Pool__wrapper {
-  padding: 10px 0px;
+  width: 90%;
+  padding: 80px 0px;
+  z-index: 9;
 
   .boxInner__top {
     display: flex;
@@ -74,7 +111,7 @@ body {
 
     h4 {
       // font: normal normal bold 24px/26px Poppins !important;
-      font-family: system-ui;
+      font-family: Poppins;
     }
   }
 
@@ -100,16 +137,16 @@ body {
   }
 
   .boxWrapper {
-    background: transparent linear-gradient(125deg, #23009639 0%, #5D53534D 100%) 0% 0% no-repeat padding-box;
-    box-shadow: inset 0px 3px 6px #00000029;
-    border: 1px solid #FFFFFF26;
+    background: transparent linear-gradient(125deg, rgb(183 230 163 / 6%) 0%, rgb(93 83 83 / 7%) 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px rgb(0 0 0 / 16%);
+    border: 1px solid rgba(255, 255, 255, 0.1490196078);
     border-radius: 20px;
     opacity: 1;
     backdrop-filter: blur(17px);
     -webkit-backdrop-filter: blur(17px);
     padding: 30px 30px 30px;
-    width: 48%;
-    margin: 20px auto;
+    width: 45%;
+    margin: 20px 0px;
 
     .box__footer {
       display: flex;
@@ -118,7 +155,8 @@ body {
 
       .box__footer__inner b {
         text-align: left;
-        font: normal normal 600 18px/34px Poppins;
+        font-weight: 500;
+        font-size: 15px;
         letter-spacing: 0.36px;
         color: #565555;
         opacity: 1;
@@ -126,7 +164,8 @@ body {
 
       .box__footer__inner h5 {
         text-align: center;
-        font: normal normal 600 25px/34px Poppins;
+        font-weight: 500;
+        font-size: 20px;
         letter-spacing: 0.5px;
         color: #FF82A0;
         opacity: 1;
@@ -141,7 +180,7 @@ body {
         color: black;
         padding: 13px 35px;
         font-size: 17px;
-        font-family: system-ui;
+        font-family: Poppins;
         font-weight: 500;
         cursor: pointer;
       }
@@ -166,7 +205,7 @@ body {
       // font: normal normal bold 32px/48px Poppins;
       letter-spacing: 0.64px;
       color: #565555;
-      font-family: system-ui;
+      font-family: Poppins;
 
 
       span {
@@ -189,16 +228,15 @@ body {
   }
 
   .boxWrapper__tow__inner {
-    width: 29%;
-    /* UI Properties */
-    background: transparent linear-gradient(150deg, #23009639 0%, #5D53534D 100%) 0% 0% no-repeat padding-box;
-    box-shadow: inset 0px 3px 6px #00000029;
-    border: 1px solid #FFFFFF26;
-    border-radius: 20px;
-    opacity: 1;
+    background: transparent linear-gradient(125deg, rgb(183 230 163 / 6%) 0%, rgb(93 83 83 / 7%) 100%) 0% 0% no-repeat padding-box;
+    box-shadow: inset 0px 3px 6px rgb(0 0 0 / 16%);
+    border: 1px solid rgba(255, 255, 255, 0.1490196078);
     backdrop-filter: blur(17px);
-    -webkit-backdrop-filter: blur(17px);
-    padding: 45px 20px 30px;
+    padding: 45px 20px 0px;
+    border-radius: 20px;
+    border-radius: 20px;
+    width: 32%;
+    opacity: 1;
 
     .boxInner__top {
       display: flex;
@@ -242,7 +280,7 @@ body {
     }
 
     .button___boxxx {
-      margin: 20px auto;
+      margin: 20px auto 40px;
 
       .roww___ {
         margin-bottom: 10px;
@@ -257,7 +295,7 @@ body {
         font: normal normal bold 16px/25px Poppins;
         letter-spacing: 0px;
         font-size: 17px;
-        font-family: system-ui;
+        font-family: Poppins;
         font-weight: 500;
         color: #565555;
       }
@@ -313,7 +351,7 @@ button {
 
   padding: 10px 35px;
   font-size: 17px;
-  font-family: system-ui;
+  font-family: Poppins;
   font-weight: 500;
 }
 
@@ -351,9 +389,9 @@ button {
 
 
 .divider {
-  height: 100px;
   width: 1px;
-  border-right: 1px solid #565555;
+  height: 80px;
+  border-right: 1px solid #BABABA;
 }
 
 
@@ -380,12 +418,13 @@ body .modal___________content {
 
 
 @media screen and (max-width: 1024px) {
-  .Staking__Pool__wrapper .boxWrapper{
+  .Staking__Pool__wrapper .boxWrapper {
     width: 48%;
     margin: 10px auto;
     padding: 25px 10px 15px;
   }
 }
+
 @media screen and (max-width: 800px) {
   .Staking__Pool__wrapper {
     padding: 10px 10px;
@@ -421,7 +460,8 @@ body .modal___________content {
 
           b {
             text-align: left;
-            font: normal normal 600 15px/25px Poppins;
+            font-weight: 500;
+            font-size: 15px;
             letter-spacing: 0.36px;
             color: #565555;
             opacity: 1;
@@ -536,4 +576,10 @@ body .modal___________content {
   .scond____img {
     margin-left: 40px;
   }
+}
+
+.modal___btn {
+  font-size: 15px !important;
+  height: 45px !important;
+  width: 110px;
 }

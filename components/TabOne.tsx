@@ -51,33 +51,15 @@ const TabOne: FC<{}> = () => {
                         <div className="box__footer__inner">
                             <b>Current Rewards</b>
                             <h5>0.001</h5>
-                            {/* <button onClick={toggle}>Collect</button>
-                            <Modal isOpen={isOpen} toggle={toggle}>
-                                <div>
-                                    Yaay!!! Our Modal is rendered Properly.
-                                    <button onClick={toggle}>x</button>
-                                </div>
-                            </Modal> */}
-                            <Button onClick={onOpen}>Collect</Button>
+                            <Button onClick={onOpen} py={10} className="modal___btn">Collect</Button>
 
                             <Modal isOpen={isOpen} onClose={onClose} isCentered>
                                 <ModalOverlay />
                                 <ModalContent>
-                                    {/* <ModalHeader>Modal Title</ModalHeader> */}
-                                    {/* <ModalCloseButton /> */}
                                     <ModalBody className="modal___________content">
-                                        {/* <Lorem count={2} /> */}
-                                        {/* <Text>Lorem</Text> */}
                                         <Image src={'https://dulcet-malabi-b51c3d.netlify.app/loader.PNG'} />
                                         <Button colorScheme='gray' color={'lightgray'}>Loading...</Button>
                                     </ModalBody>
-
-                                    {/* <ModalFooter>
-                                        <Button colorScheme='blue' mr={3} onClick={onClose}>
-                                            Close
-                                        </Button>
-                                        <Button variant='ghost'>Secondary Action</Button>
-                                    </ModalFooter> */}
                                 </ModalContent>
                             </Modal>
                         </div>
@@ -93,7 +75,7 @@ const TabOne: FC<{}> = () => {
                             <b>Current Rewards</b>
                             <h5>0.001</h5>
                             {/* <button>Stake</button> */}
-                            <Button onClick={onOpen}>Approved</Button>
+                            <Button onClick={onOpen} className={'modal___btn'}>Approved</Button>
 
                             <Modal isOpen={isOpen} onClose={onClose} isCentered>
                                 <ModalOverlay />
