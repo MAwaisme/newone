@@ -1,3 +1,10 @@
+.pink_________btn{
+  background-color: #FF7495 !important;
+}
+.px________pading{
+  padding: 40px 15px !important;
+}
+
 body {
   position: relative;
   font-family: system-ui;
@@ -506,5 +513,27 @@ body .modal___________content {
 @media screen and (max-width: 260px) {
   button {
     font-size: 15px;
+  }
+}
+
+
+.logo____header {
+  position: relative;
+
+  img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+  }
+
+  .first____img {
+    z-index: 99;
+    position: absolute;
+    left: 5px;
+    top: -7px;
+  }
+
+  .scond____img {
+    margin-left: 40px;
   }
 }
